@@ -1,0 +1,164 @@
+@charset "utf-8";
+/*CSS Info ======================================================================
+File Name: Grid.css
+Editor: Sophia
+Last Editor: Sophia
+Date: 2010/08/09
+---------------------------
+【 Table of Contents 】
+	MyGridView	自訂寬度
+	MyGridView2	100%寬度
+		MyHead
+		MyRow
+		MyAlt
+		MyPager
+		MyOver
+	MyTable
+		Alt
+		Over
+		
+=================================================================================*/
+
+/*===============================================================================
+                           Grid View 或列表表格設定 
+=================================================================================*/
+.MyGridView{
+	width:100%;
+	border:1px solid #DCECF9;
+	font-size: small;
+	color:#003366;
+	padding:3px;
+}
+.MyGridView2{	/*寬度自訂*/
+	border:1px solid #DCECF9;
+	font-size: small;
+	color:#003366;
+	padding:3px;
+}
+.MyHead ,.MyGridView tr.MyHead th,.MyGridView th,.MyGridView2 th{
+	color:#ffffff;
+	font-weight: bold;
+	padding:5px;
+	background:#2170bd  url(../images/MyHead-bg.png) 50% 50% repeat-x; 
+}
+.MyGridView th{
+	}
+.MyHead a,.MyGridView th a{
+	color:#ffffff;
+}
+.MyHead a:hover,.MyGridView th a:hover{
+	color:#223375;
+}
+.MyGridView tr.MyHead th,.MyGridView2 tr.MyHead th {
+	text-align:center;
+}
+.MyGridView tr.MyHead td {
+}
+.MyRow,.MyGridView td, .MyGridView2 td{
+	color:#003366;
+}
+.MyGridView td,.MyGridView2 td, .MyRow td,.MyAlt td{
+    padding:5px;
+	padding:3px\9;
+}
+.MyRow a,.MyGridView td a, .MyGridView2 td a{
+	color:#003366;	
+}
+.MyRow a:hover,.MyGridView td a:hover, .MyGridView2 td a:hover{
+	color: #f03b58;
+}
+.MyAlt{
+	padding:2px;
+	border-bottom: 1px solid #e3f1fe;
+	border-left:1px solid #e5eff8;
+	background:#f9fcfe;
+	color:#003366;
+}
+.MyAlt a{
+	color:#678197;
+}
+.MyAlt a:hover{
+	color: #f03b58;
+
+}
+.MyPager{
+	padding:2px;
+	background:#f4f9fe;
+	text-align: right;
+	color:#222222;
+}
+div.MyPager{ 
+	margin-top:2px;
+	padding:5px;
+	background:none;
+	color:#222222;
+}
+.MyOver{
+	background: #FFC;
+	}
+
+
+/*===============================================================================
+                           FontView、DetailVeiw套用 
+=================================================================================*/
+.Mytable {
+	width:100%;
+	border:1px solid #CCC;
+	padding:3px;
+	/*border-collapse:collapse;*/
+	margin-bottom: 5px;
+	font-size: 13px;
+	line-height:1.5em;	
+}
+
+.Mytable caption, .MyCaption {	/*表格標題*/
+	color: #333;
+	font-size:1.1em;
+	letter-spacing:0.1em;
+	padding:0 5px;
+	margin: 0 0 0 0;
+	caption-side: top;
+	text-align:center;
+	font-weight: bold;
+	line-height: 2em;
+	font-family: "Arial Unicode MS", "微軟正黑體";
+}
+.Mytable th{
+	font-weight:normal;
+	color:#2170bd;
+	text-align:right;
+	border-bottom: 1px solid #ffffff;
+	padding:2px;
+	width: 15%;
+	background:#e9f2f9;
+}
+.Mytable .odd { /*奇數行*/
+	background:#fff;
+}
+.Mytable .even { /*偶數行*/
+	background:#f9fcfe;
+}
+.Mytable td{
+	color:#003366;
+	padding:2px;
+	text-align:left;
+	
+}
+.Mytable thead th{
+	border-right:1px solid #fff;
+	background:#e9f2f9;
+	background: #2170bd url(../images/MyHead-bg.png) 50% 50% repeat-x; 
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+	padding:5px;
+}
+.Mytable td table{
+	padding:0;
+	margin:0 1px 0 0;
+	border: 1px solid #ccc;
+
+}
+.Mytable td table td{
+
+}
